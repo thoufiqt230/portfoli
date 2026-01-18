@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1 class="logo">MyPortfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I’m Mohammed Thoufiq, a dedicated technology enthusiast with a strong focus on coding and problem-solving. I am passionate about both front-end and back-end development, with skills in HTML, CSS, JavaScript, Core Java, MySQL, APIs, Spring Boot, and GitHub. My goal is to build a successful career in the software field, work on real-world projects, and contribute to impactful technological solutions while continuously improving my skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card"
+             data-code="https://github.com/thoufiq123-cmd/Student-registration"
+             data-live="https://registration-form1203e.netlify.app"
+             data-image="crud-application-php-pdo-mysql.png">
+          <img src="crud-application-php-pdo-mysql.png" alt="Project 1">
+          <h3>Project 1</h3>
+          <p>CRUD Operation Web Application</p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card"
+             data-code="https://github.com/thoufiq123-cmd/e-commerce"
+             data-live="https://product-managementwebsite.netlify.app"
+             data-image="product management.jpg">
+          <img src="product management.jpg" alt="Project 2">
+          <h3>Project 2</h3>
+          <p>Product Management</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Popup -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 id="modal-title"></h2>
+      <img id="modal-image" src="" alt="Project Preview">
+      <div class="modal-buttons">
+        <a id="viewCode" href="#" target="_blank" class="btn">View Code</a>
+        <a id="viewLive" href="#" target="_blank" class="btn">View Live</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume">
+    <div class="resume-container">
+      <h2 class="section-title">Resume</h2>
+      <div class="edu-item">
+        <h3 class="edu-title">School</h3>
+        <p class="edu-name"><strong>Islamiyah Matric HSS</strong></p>
+        <p class="edu-location">Karubukkadai, Coimbatore</p>
+        <p class="edu-year">2019 - 2020 <span class="edu-badge">SSLC</span></p>
+        <p class="edu-name"><strong>City Corporate HSS</strong></p>
+        <p class="edu-location">Town Hall, Coimbatore</p>
+        <p class="edu-year">2020 - 2022 <span class="edu-badge">HSC</span></p>
+      </div>
+      <h3 class="edu-title">College</h3>
+      <p><strong>Government Arts & Science College</strong> — BBA (2022-2025)</p>
+      <img src="certificate.jpg" alt="Certification" class="edu-cert">
+      <div class="edu-card">
+        <h3 class="edu-title">Skills</h3>
+        <h4 class="edu-subtitle">Programming</h4>
+        <p>HTML, CSS, JavaScript, MySQL, Java, REST API</p>
+        <h4 class="edu-subtitle">Frameworks & Tools</h4>
+        <p>React, Spring Boot, Git, VS Code</p>
+        <h4 class="edu-subtitle">Languages</h4>
+        <p>English, Tamil</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Leave your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn">Submit Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <span class="connect-title">Connect With Me</span>
+        <div class="social-icons">
+          <a href="tel:+916381853505" class="social-icon" title="Call Me"><i class="fas fa-phone"></i></a>
+          <a href="mailto:thoufiqt230@example.com" class="social-icon" title="Email Me"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/mohammed-thoufiq1" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/__tho_fii" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/916381853505" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Mohammed Thoufiq. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="in.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1 class="logo">MyPortfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I’m Mohammed Thoufiq, a dedicated technology enthusiast with a strong focus on coding and problem-solving. I am passionate about both front-end and back-end development, with skills in HTML, CSS, JavaScript, Core Java, MySQL, APIs, Spring Boot, and GitHub. My goal is to build a successful career in the software field, work on real-world projects, and contribute to impactful technological solutions while continuously improving my skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card"
+             data-code="https://github.com/thoufiq123-cmd/Student-registration"
+             data-live="https://registration-form1203e.netlify.app"
+             data-image="crud-application-php-pdo-mysql.png">
+          <img src="crud-application-php-pdo-mysql.png" alt="Project 1">
+          <h3>Project 1</h3>
+          <p>CRUD Operation Web Application</p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card"
+             data-code="https://github.com/thoufiq123-cmd/e-commerce"
+             data-live="https://product-managementwebsite.netlify.app"
+             data-image="product management.jpg">
+          <img src="product management.jpg" alt="Project 2">
+          <h3>Project 2</h3>
+          <p>Product Management</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Popup -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 id="modal-title"></h2>
+      <img id="modal-image" src="" alt="Project Preview">
+      <div class="modal-buttons">
+        <a id="viewCode" href="#" target="_blank" class="btn">View Code</a>
+        <a id="viewLive" href="#" target="_blank" class="btn">View Live</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume">
+    <div class="resume-container">
+      <h2 class="section-title">Resume</h2>
+      <div class="edu-item">
+        <h3 class="edu-title">School</h3>
+        <p class="edu-name"><strong>Islamiyah Matric HSS</strong></p>
+        <p class="edu-location">Karubukkadai, Coimbatore</p>
+        <p class="edu-year">2019 - 2020 <span class="edu-badge">SSLC</span></p>
+        <p class="edu-name"><strong>City Corporate HSS</strong></p>
+        <p class="edu-location">Town Hall, Coimbatore</p>
+        <p class="edu-year">2020 - 2022 <span class="edu-badge">HSC</span></p>
+      </div>
+      <h3 class="edu-title">College</h3>
+      <p><strong>Government Arts & Science College</strong> — BBA (2022-2025)</p>
+      <img src="certificate.jpg" alt="Certification" class="edu-cert">
+      <div class="edu-card">
+        <h3 class="edu-title">Skills</h3>
+        <h4 class="edu-subtitle">Programming</h4>
+        <p>HTML, CSS, JavaScript, MySQL, Java, REST API</p>
+        <h4 class="edu-subtitle">Frameworks & Tools</h4>
+        <p>React, Spring Boot, Git, VS Code</p>
+        <h4 class="edu-subtitle">Languages</h4>
+        <p>English, Tamil</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Leave your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn">Submit Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <span class="connect-title">Connect With Me</span>
+        <div class="social-icons">
+          <a href="tel:+916381853505" class="social-icon" title="Call Me"><i class="fas fa-phone"></i></a>
+          <a href="mailto:thoufiqt230@example.com" class="social-icon" title="Email Me"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/mohammed-thoufiq1" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/__tho_fii" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/916381853505" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Mohammed Thoufiq. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="in.js" defer></script>
+</body>
+</html>
+
+
+/* ========================
+   Global Styles
+======================== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #222020;
+  color: white;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ========================
+   Header & Navigation
+======================== */
+header {
+  background: #111;
+  padding: 0.4rem 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #6a0dad;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: white;
+}
+
+
+/* About */
+.about {
+  background: #1e1e1e;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+.about-text {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+
+/* ========================
+   Projects Section
+======================== */
+.projects {
+  padding: 0.4rem 0.4rem;
+  background: #222;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #333;
+  padding: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* ========================
+   Modal Styles
+======================== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #777;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  width: 320px;
+  max-width: 90%;
+  position: relative;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.btn {
+  background: #6a0dad;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #4b087a;
+}
+
+/* ========================
+   Resume Section
+======================== */
+.resume-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0.4rem 0.4rem;
+  background: linear-gradient(135deg, #11a7a7, #04303d);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.edu-item,
+.edu-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.edu-title {
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.edu-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.edu-location {
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+.edu-year {
+  font-size: 0.95rem;
+  color: #ffeb3b;
+  font-weight: bold;
+}
+
+.edu-badge {
+  background: #6a0dad;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-left: 8px;
+  font-size: 0.85rem;
+}
+
+.edu-cert {
+  max-width: 90%;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.edu-subtitle {
+  font-size: 1.2rem;
+  color: #92928e;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.edu-card p {
+  font-size: 1rem;
+  color: #f0f0f0;
+  text-align: left;
+}
+
+/* ========================
+   Contact Section
+======================== */
+.contact {
+  background-color: rgb(190, 86, 126);
+  padding: 0.4rem 0.4rem;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  color: #000;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(97, 68, 68, 0.2);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* ========================
+   Footer Section
+======================== */
+.footer {
+  background: rgba(31, 27, 27, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(26, 23, 23, 0.4);
+  padding: 15px 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.connect-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #06bb85;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.social-icon i {
+  font-size: 2rem;
+}
+
+.social-icon[href*="mailto"] i { color: #ff4a4a; }
+.social-icon[href*="linkedin"] i { color: #0077b5; }
+.social-icon[href*="instagram"] i { color: #e92549; }
+.social-icon[href*="wa.me"] i { color: #25d366; }
+
+.copyright {
+  margin-top: 20px;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  color: #a7a4a4;
+  padding-top: 5px;
+  font-size: 0.9rem;
+}
+
+
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: #222;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Close button for nav menu */
+.nav-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+
+/* ========================
+   Responsive Design
+======================== */
+@media (max-width: 768px) {
+
+
+  .nav-close-btn {
+    display: block;
+  }
+
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: #1b1a1a;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+// =========================
+// Mobile Navigation Toggle
+// =========================
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const navCloseBtn = document.createElement("span");
+
+// Create a close (X) button
+navCloseBtn.innerHTML = "&times;";
+navCloseBtn.classList.add("nav-close-btn");
+navLinks.prepend(navCloseBtn);
+
+// Open menu
+hamburger.addEventListener("click", () => {
+  navLinks.classList.add("active");
+});
+
+// Close menu
+navCloseBtn.addEventListener("click", () => {
+  navLinks.classList.remove("active");
+});
+
+// Close when a link is clicked
+document.querySelectorAll(".nav-links a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+  });
+});
+
+// =========================
+// Project Modal Popup
+// =========================
+const projectCards = document.querySelectorAll(".project-card");
+const modal = document.getElementById("projectModal");
+const modalTitle = document.getElementById("modal-title");
+const modalImage = document.getElementById("modal-image");
+const viewCodeBtn = document.getElementById("viewCode");
+const viewLiveBtn = document.getElementById("viewLive");
+const modalCloseBtn = modal.querySelector(".close-btn");
+
+projectCards.forEach((card) => {
+  card.addEventListener("click", () => {
+    modalTitle.textContent = card.querySelector("h3").textContent;
+    modalImage.src = card.dataset.image;
+    viewCodeBtn.href = card.dataset.code;
+    viewLiveBtn.href = card.dataset.live;
+    modal.style.display = "flex";
+  });
+});
+
+// Close modal
+modalCloseBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+window.addEventListener("click", (e) => {
+  if (e.target === modal) modal.style.display = "none";
+});
+
+// =========================
+// Contact Form Submit
+// =========================
+const contactForm = document.getElementById("contact-form");
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (name && email && message) {
+    alert(`Thank you, ${name}! Your message has been sent successfully.`);
+    contactForm.reset();
+  } else {
+    alert("Please fill out all fields before submitting.");
+  }
+});
