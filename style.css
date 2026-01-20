@@ -250,7 +250,7 @@ header {
    Contact Section
 ======================== */
 .contact {
-  background-color: rgb(190, 86, 126);
+  background-color: rgb(17, 11, 14);
   padding: 0.4rem 0.4rem;
    text-align: center;
 }
@@ -434,4 +434,5 @@ textarea {
     display: block;
   }
 }
+
 
